@@ -4281,9 +4281,9 @@ a.close.disabled {
 .modal-xl {
     max-width: 800px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 700px) {
   .modal-xl {
-    max-width: 1140px; } }
+    max-width: 750px; } }
 
 .tooltip {
   position: absolute;
