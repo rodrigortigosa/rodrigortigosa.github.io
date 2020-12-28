@@ -5,7 +5,9 @@ $(function () {
         preventSubmit: true,
         submitError: function ($form, event, errors) {
             // additional error messages or events
-        },
+        }//;
+    });
+        /*
         submitSuccess: function ($form, event) {
             event.preventDefault(); // prevent default submit behaviour
             // get values from FORM
@@ -20,7 +22,7 @@ $(function () {
             $this = $("#sendMessageButton");
             $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
             $.ajax({
-                url: "assets/mail/contact_me.php",
+                url: "/assets/mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
@@ -78,6 +80,8 @@ $(function () {
         e.preventDefault();
         $(this).tab("show");
     });
+    */
+
 });
 
 /*When clicking on Full hide fail/success boxes */
