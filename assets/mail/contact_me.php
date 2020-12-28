@@ -14,7 +14,7 @@ $to = "rodrigortigosa@gmail.com"; // Add your email address in between the "" re
 $subject = "$name se quiere contactar con vos";
 $body = "Recibiste un nuevo mensaje de tu Portfolio.\n\n"."Estos son los detalles:\n\nNombre: $name\n\nEmail: $email\n\nMensaje:\n$message";
 $header = "De: noreply@rodrigortigosa.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
-$header = "Reply-To: $email";	
+$header .= "Reply-To: $email";	
 
 if(!mail($to, $subject, $body, $header))
   http_response_code(500);
